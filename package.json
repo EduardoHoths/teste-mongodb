@@ -10,7 +10,7 @@
     "lint": "next lint",
     "deploy:prod": "yarn deploy:staging --prod",
     "deploy:staging": "yarn build && vercel ./build --confirm --no-clipboard --token=$VERCEL_TOKEN",
-    "deploy:preview": "node ./scripts/pullRequestPreview.ts"
+    "deploy:preview": "node ./scripts/pullRequestPreview.js"
   },
   "dependencies": {
     "mongoose": "^8.0.4",
